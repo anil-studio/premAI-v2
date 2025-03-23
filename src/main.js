@@ -1,5 +1,5 @@
 /**
- * @version 1.0.0
+ * @version 1.0.1
  * Script for PREM AI.
  */
 
@@ -274,9 +274,10 @@ function initNavMobileDropdowns() {
 
   dropdownBtns.forEach((dropdownBtn) => {
     const dropdownList = dropdownBtn.querySelector('.nav__btn-dropdown')
-
+    const icon = dropdownBtn.querySelector('.btn__icon')
     dropdownBtn.addEventListener('click', () => {
       dropdownList.classList.toggle('is-closed')
+      icon.classList.toggle('is-open')
     })
 
   })
